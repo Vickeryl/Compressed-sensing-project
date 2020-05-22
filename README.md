@@ -1,5 +1,4 @@
 # Compressed-sensing-project
-===
 
 Abstract: </br>
 ---
@@ -7,6 +6,7 @@ In this project, Compressed Sensing was used to recover a full image from a smal
 
 In this project, technology of DCT, L1-norm regularization, cross validation (CV) as well as Median Filter were adopted to recover image. First break the image into blocks according to their sizes. Then apply DCT, cross validation and L1-norm regularization to each of the block to find the transformation matrix and coefficients vector with different sample sizes. Recover the image block by multiply transformation matrix and coefficient vector. After recovering all blocks, recombine them together to form the recovered image. After recovery, a Median Filter was applied to decrease the recovery error. In summary, the program performs poor on both images when sample size is 10, and the recovered image quality increases as the sample size increases. Median Filter has outstanding performance in small sample sizes and large image. 
 
+###Contents
 imgRead.m:</br>
 
 Load test image: e.g. A = imgRead (‘lena.bmp')</br>
