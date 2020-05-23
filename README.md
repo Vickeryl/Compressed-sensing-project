@@ -27,13 +27,25 @@ In this project, technology of DCT, L1-norm regularization, cross validation (CV
 
 `imgRecover.m`:</br>
 
-* Syntax: imgOut = imgRecover imgIn , blkSize , numSample
+* Syntax: imgOut = imgRecover (imgIn , blkSize , numSample)
 * Input:
 * imgIn : H by W input matrix
 * blkSize : block size, i.e., K on Slide 12
 * numSample : number of samples per block
 * Output: H by W matrix
   * Recovered image without median filtering
+  
+`imgSave.m`:</br>
+* Save recovered images
+* Input: imgOut (recovered H by W matrix by `imgRecover.m`)
+* Output: .bmp file
+
+`dctTransform2.m`: </br>
+* Input:
+ * block: block matrix (block of the original image)
+ * blkSize: block size
+* Output: T (transformation matrix of block)
+
   
 #### Out Image:
 * `fishing_boat.bmp`: 10 recovered images of sample size 10, 20, 30, 40 and 50, with and without `Median Filtering`
